@@ -42,11 +42,6 @@ class _TimezonePageState extends State<TimezonePage> {
     super.initState();
     _controller = TimezoneController(service: widget.service);
     widget.service.lookupLocation().then(_controller.selectLocation);
-
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!mounted) return;
-      TimezoneMap.precacheAssets(context);
-    });
   }
 
   @override
