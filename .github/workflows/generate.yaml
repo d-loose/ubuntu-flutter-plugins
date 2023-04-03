@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - automated-publishing
   pull_request:
   workflow_dispatch:
 
@@ -40,7 +41,15 @@ jobs:
     - run: melos bootstrap
     - run: melos run generate
     - run: melos run gen-l10n
+    - run: flutter pub global activate pub_version_plus
+    - run: |
+        pushd ./packages/ubuntu_localizations/
+        pubversion patch
+        popd
+    - run: |
+        VERSION=$(grep version: ./packages/ubuntu_localizations/pubspec.yaml | cut -d' ' -f2)
     - uses: peter-evans/create-pull-request@v4
       with:
-        title: 'Regenerate files'
-        commit-message: 'Regenerate files'
+        title: 'Regenerate files and publish new version'
+        commit-message: 'Regenerate files and publish new version'
+        labels: ubuntu-localizations-v$VERSION
