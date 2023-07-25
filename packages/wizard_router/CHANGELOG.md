@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.4](https://github.com/d-loose/ubuntu-flutter-plugins/compare/wizard_router-v1.0.3...wizard_router-v1.0.4) (2023-07-25)
+
+
+* **github:** remove old workflows ([154593c](https://github.com/d-loose/ubuntu-flutter-plugins/commit/154593c71e41672e830d3dc208231de10fd86b4e))
+* mv / packages/wizard_router/ ([e4544bd](https://github.com/d-loose/ubuntu-flutter-plugins/commit/e4544bd4dd0980fb8a643f48a001b88cd8c1ff32))
+* release wizard_router v1.0.3 ([#305](https://github.com/d-loose/ubuntu-flutter-plugins/issues/305)) ([580ce83](https://github.com/d-loose/ubuntu-flutter-plugins/commit/580ce83b3a3b8f79c82511452e81edc912dd3007))
+* remove codecov.yaml from newly imported packages ([486f0f6](https://github.com/d-loose/ubuntu-flutter-plugins/commit/486f0f696ab14f9d068a1cbae561152834c3a129))
+* **renovate:** clean up old renovate configs ([af1126b](https://github.com/d-loose/ubuntu-flutter-plugins/commit/af1126ba62d60fb411ddb0b29e326f0f51a6b297))
+* update links ([#299](https://github.com/d-loose/ubuntu-flutter-plugins/issues/299)) ([e679e3b](https://github.com/d-loose/ubuntu-flutter-plugins/commit/e679e3b3a8a6316a0fc56e9695a6798d26f3929b))
+
 ## [1.0.3](https://github.com/canonical/ubuntu-flutter-plugins/compare/wizard_router-v1.0.2...wizard_router-v1.0.3) (2023-07-18)
 
 
